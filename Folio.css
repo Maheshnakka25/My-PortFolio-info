@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f1f1f1;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease-out;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00e0ff;
+  text-shadow: 0 0 10px rgba(0, 224, 255, 0.7);
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #ffb400;
+  margin-top: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 0;
+  border-radius: 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffc6;
+  transform: scale(1.1);
+}
+
+
+.glow-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+
+h2 {
+  font-size: 2rem;
+  color: #00ffc6;
+  margin-bottom: 15px;
+  border-left: 5px solid #00e0ff;
+  padding-left: 10px;
+}
+
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.an{
+	text-decoration:none;
+}
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  border: 2px solid #00ffc6;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+a {
+  color: #ffb400;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #00ffc6;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #005fa3;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.profile-pic-container {
+  
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #007acc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
